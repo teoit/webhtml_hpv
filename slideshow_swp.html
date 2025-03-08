@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Slideshow Swipper</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+        body {
+            font-family: 'Unbounded', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slide-main {
+            position: relative;
+            width: 100%;
+            height: 100svh;
+            overflow: hidden;
+        }
+        .slide-main__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .slide-main__title{
+            position: absolute;
+            top: 12svh;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 400;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 0.3em;
+            font-size: 6.8svh;
+        }
+        .slide-main__title__txt{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            font-size: 0.7em;
+            line-height: 1;
+          
+        }
+        .slide-main__title__txt2{
+            font-size: 1.55em;
+            line-height: 0.9em;
+            font-weight: 300;
+        }
+
+        .slide-main__des__title{
+            position: absolute;
+            top:17%;
+            left: 7%;
+            font-size: 2.844vw;
+            width: 44vw;
+            font-weight: 400;
+        }
+
+        .slide-main__des{
+            position: absolute;
+            top:26%;
+            left: 7%;
+            width: 43.3vw;
+            font-size: 1vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5em;
+        }
+        
+        .slide-main__des__txt{
+            font-size: 0.9em;
+            margin-bottom: 1.7em;
+            text-align: justify;
+            font-weight: 300;
+            line-height: 1.5;
+        }   
+
+        .btn-more{
+            font-size: 1.1vw;
+            padding: 0.7em 1em;
+            line-height: 1em;
+            border-radius: 2em;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            cursor: pointer;
+            font-weight: 200;
+        }
+
+        .btn-more--color{
+            background: linear-gradient(90deg, #422667 0%, #8F195D 50%, #DB0C53 100%);
+            color: var(--white);
+        }
+        .btn-more__svg{
+           fill: var(--white);
+           width: 1.2vw;
+           height: 1vw;
+        }
+
+        /* --- pagination */
+        .swp-main-pagination .swiper-pagination-bullet{
+            background-color: rgba(var(--reda),0.5);
+        }
+
+        .swp-main-pagination .swiper-pagination-bullet-active{
+            background-color: rgb(var(--reda))!important;
+        }
+
+    </style>
+    <link rel="stylesheet" href="css/reponsive-sideshow-swp.css">
+</head>
+<body>
+    <div class="swiper swp-slideshow-main">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-main">                
+                <h1 class="slide-main__title border">
+                    <span class="slide-main__title__txt border">
+                        <span>The Center</span>
+                        <span>of</span>
+                    </span>
+                    <span class="slide-main__title__txt2 border">HANOI</span>
+                </h1>
+                <img class="slide-main__img" src="img/slideshow/the-center-of-hanoi.webp" alt="the center of hanoi">                
+            </div>
+            <div class="swiper-slide slide-main">                
+                <h2 class="slide-main__des__title border">Welcome to Hanoi Centre</h2>
+                <div class="slide-main__des border">   
+                    <div>       
+                        <p class="slide-main__des__txt">
+                            Hanoi Centre shopping mall is located at 175 Nguyen Thai Hoc, Ba Dinh District, Hanoi, 
+                            a prime area in the heart of the city. The project's prime location not only places it
+                            close to Ba Dinh Square but also near famous tourist spots like the Temple of Literature 
+                            (Văn Miếu Quốc Tử Giám) and West Lake (Hồ Tây).​
+                        </p>
+                        <p class="slide-main__des__txt">
+                            As part of the Tien Bo complex project, which includes a shopping mall, a luxury hotel,
+                            Grade-A office building, and serviced apartments. This combination not only creates a
+                            vibrant space but also attracts various customer groups such as office workers, tourists,
+                            business travelers, and shoppers. With a large floor area and 5 shopping floors, Hanoi Centre
+                                offers a diverse range of goods and services, promising to become an attractive and comprehensive
+                                destination for customers
+                        </p>
+                        <p class="slide-main__des__txt">
+                            Awarded <strong>"Best Retail Interior Design" by PropertyGuru in 2024</strong>, Hanoi Centre is poised to be a highlight
+                            of the capital’s vibrant retail landscape by connecting modern design with the unique heritage of Hanoi.
+                        </p>
+                    </div>
+        
+                    <a href="#" class="btn-more btn-more--color border" title="More about us">
+                        <span>More about us</span>
+                        <svg class="btn-more__svg" width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.8236 0.278446L1.8824 0.278446C1.65013 0.279175 1.42246 0.343235 1.22389 0.463732C1.02532 0.584229 0.863373 0.756598 0.75548 0.962288C0.647589 1.16798 0.597836 1.3992 0.611578 1.63106C0.625322 1.86292 0.70204 2.08665 0.833475 2.27815L12.3041 18.8468C12.7795 19.5337 13.924 19.5337 14.4006 18.8468L25.8712 2.27815C26.004 2.08705 26.0819 1.86321 26.0963 1.63096C26.1108 1.39871 26.0614 1.16693 25.9534 0.96081C25.8454 0.754684 25.683 0.582094 25.4838 0.461792C25.2846 0.341492 25.0563 0.27808 24.8236 0.278446ZM13.353 15.8823L4.31416 2.82747L22.3918 2.82747L13.353 15.8823Z" fill="white"/>
+                        </svg>
+                    </a>
+                    
+            
+                </div>           
+                <img class="slide-main__img" src="img/slideshow/welcom-to-hanoi-center.webp" alt="welcom to hanoi center">                
+            </div>        
+        </div>
+        <div class="swiper-pagination swp-main-pagination"></div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swp-slideshow-main", {
+            // loop: true,
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

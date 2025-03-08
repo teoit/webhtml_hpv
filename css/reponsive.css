@@ -7,18 +7,48 @@
 * >= 1400:  xxl
 */
 @media (max-width: 575px){   
+    .nitem{
+        flex-direction: column;
+        gap: 1em;
+    }
 
-}
-@media (min-width: 576px) and (max-width: 768px){
+    .nitem__thumb{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    .nitem__thumb-img{
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-bottom-left-radius: 0;
+    }
+
+    .nitem__content{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 2em;
+    }
    
 }
 
-@media (max-width: 768px){    
-     
+@media (min-width: 576px) and (max-width: 768px){
+    .nitem__content{
+        font-size: 7px;
+    }
+
+    .row-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px){  
+   
 }
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
-   
+    html {      
+        font-size: 50%;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
