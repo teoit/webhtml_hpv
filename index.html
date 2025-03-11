@@ -13,20 +13,25 @@
     <link rel="stylesheet" href="css/reponsive.css">
 </head>
 <body class="bg-home border">
-    <header class="header-wrapper">     
-        <a class="logo-hpv border" href="#" title="Hpv">
-            <img class="logo-hpv__img" src="/img/logo/msd-hpv-logo.webp" alt="logo hpv">
+    <header class="header-wrapper">   
+        <div class="m-menubar m-show">
+            <svg class="m-menubar__icon" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="#svg-menubar" fill="currentColor"></use>
+            </svg>
+        </div>  
+        <a class="logo-hpv" href="#" title="Hpv">
+            <img class="logo-hpv__img" src="img/logo/msd-hpv-logo.webp" alt="logo hpv">
         </a>
-        <nav class="navbar border">
-            <ul class="menus">
-                <li class="menus__item c-default active">
-                    <a class="menus__item__link" href="#" title="Chiến dịch toàn quốc">Chiến dịch toàn quốc</a>
+        <nav class="navbar"> 
+            <ul class="menus m-hiden">
+                <li class="menus__item active">
+                    <a class="menus__item__link c-default" href="#" title="Chiến dịch toàn quốc">Chiến dịch toàn quốc</a>
                 </li>
-                <li class="menus__item c-default">
-                    <a class="menus__item__link" href="#" title="Gen V">Gen V</a>
+                <li class="menus__item">
+                    <a class="menus__item__link c-default" href="#" title="Gen V">Gen V</a>
                 </li>
-                <li class="menus__item c-yellow menus-sub">
-                    <a class="menus__item__link menus-sub__link" href="#" title="Gen V">
+                <li class="menus__item menus-sub">
+                    <a class="menus__item__link c-yellow menus-sub__link" href="#" title="Gen V">
                         <span>Nữ Giới</span>
                         <i class="menus-sub__icon ri-arrow-down-s-line"></i>
                     </a>
@@ -42,25 +47,51 @@
                         </li>
                     </ul>
                 </li>
-                <li class="menus__item c-blue">
-                    <a class="menus__item__link" href="#" title="Gen V">Nam Giới</a>
+                <li class="menus__item">
+                    <a class="menus__item__link c-blue" href="#" title="Gen V">Nam Giới</a>
                 </li>
-                <li class="menus__item c-default">
-                    <a class="menus__item__link" href="#" title="Trắc nghiệm">Trắc nghiệm</a>
+                <li class="menus__item">
+                    <a class="menus__item__link c-default" href="#" title="Trắc nghiệm">Trắc nghiệm</a>
                 </li>
-                <li class="menus__item c-default">
-                    <a class="menus__item__link" href="#" title="Địa Điểm Tư Vấn">Địa Điểm Tư Vấn</a>
+                <li class="menus__item">
+                    <a class="menus__item__link c-default" href="#" title="Địa Điểm Tư Vấn">Địa Điểm Tư Vấn</a>
                 </li>
-                <li class="menus__item c-blue">
-                    <a class="menus__item__link" href="#" title="Blogs">Blogs</a>
+                <li class="menus__item">
+                    <a class="menus__item__link c-blue" href="#" title="Blogs">Blogs</a>
                 </li>
-            </ul>
-        </nav>    
+            </ul>  
+            <div class="navbar-search c-default">
+                <svg class="navbar-search__icon" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <use xlink:href="#svg-search" fill="currentColor"></use>
+                </svg>
+            </div>
+        </nav>          
     </header>
     
     <div style="width: 100%;height: 500px;"></div>
 
-   
+    <!-- <div class="m-menus-wrapper border">
+        <div class="m-menus border">
+            sss
+        </div>
+    </div>  -->
+
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>            
+            <symbol id="svg-search" viewBox="0 0 24 24">
+                <path
+                   d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14">
+                </path>
+            </symbol>
+        </defs>
+        <defs>
+            <symbol id="svg-menubar" viewBox="0 0 17 4">
+                <circle cx="2" cy="2" r="2" fill="currentColor" />
+                <circle cx="9" cy="2" r="2" fill="currentColor" />
+                <circle cx="15" cy="2" r="2" fill="currentColor" />
+            </symbol>
+        </defs>
+    </svg>
 
 </body>
 </html>

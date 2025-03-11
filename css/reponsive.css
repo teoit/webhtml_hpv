@@ -6,6 +6,10 @@
 * 1200 -1400: xl
 * >= 1400:  xxl
 */
+
+/**
+ * mobile menu
+ */
 @media (max-width: 575px){   
     .nitem{
         flex-direction: column;
@@ -42,7 +46,20 @@
 }
 
 @media (max-width: 768px){  
-   
+
+    .m-hiden{
+        display: none;
+    }
+    .m-show{
+        display: block;
+    }
+
+    .header-wrapper{
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+        border-radius: unset;
+    }   
 }
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
