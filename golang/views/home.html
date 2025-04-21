@@ -1,0 +1,11 @@
+<h1> Home Page tieu de 111</h1>
+<h3>{{.name}}</h3>
+<p><strong>Age: </strong>{{.age}}</p>
+<ul>
+    {{printf "%+v" .items}}
+    {{with .items}}
+        {{range $key, $val := .}}
+            <li>{{$key}} - {{$val}}</li>
+        {{end}}
+    {{end}}
+</ul>
